@@ -3,6 +3,8 @@ import Sidebar from "./components/sidebar/Sidebar";
 import './components/csscommon/app.css';
 import Home from "./components/pages/home/Home";
 import Sales from "./components/sales/Sales";
+import Protfolio from "./components/protfolio/Protfolio";
+import Watchlist from "./components/watchlist/Watchlist";
 import {
   BrowserRouter as Router,
   Switch,
@@ -22,8 +24,13 @@ function App() {
         <Route path="/sales">
           <Sales/>
         </Route>
-        
-      </Switch>
+        <Route path="/protfolio">
+            <Protfolio/>
+        </Route>
+        <Route path='/watchlist'>
+          <Watchlist/>
+        </Route>
+       </Switch>
       </div>
     </Router>
   );
